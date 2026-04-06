@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A minimal dark/light GitHub Pages theme — pure HTML, CSS, and JS with no dependencies.">
+  <title>Jaace Theme</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaace Theme">
+  <meta property="og:description" content="A minimal dark/light GitHub Pages theme — pure HTML, CSS, and JS with no dependencies.">
+  <meta property="og:url" content="https://jaace.github.io/theme/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23f59e0b'>~</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-brand"><span>~</span>/theme</span>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none">
+          <circle cx="8" cy="8" r="3"/>
+          <path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M3.05 12.95l1.41-1.41M11.54 4.46l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M13.5 8.5a5.5 5.5 0 01-7-7 5.5 5.5 0 107 7z"/>
+        </svg>
+      </button>
+      <a href="https://github.com/Jaace/theme" class="nav-github">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="eyebrow">GitHub Pages Theme</p>
+    <h1>Jaace Theme</h1>
+    <p class="byline">by <a href="https://github.com/Jaace">@Jaace</a></p>
+    <p class="tagline">A minimal dark/light theme for GitHub Pages. Pure HTML, CSS, and JS — no dependencies, no build step.</p>
+  </section>
+
+  <!-- Usage -->
+  <section>
+    <h2>Usage</h2>
+    <p>Add two lines to any HTML page:</p>
+    <span class="code-label">In &lt;head&gt;</span>
+    <div class="code-wrap">
+      <div class="code-block">&lt;link rel="stylesheet" href="https://jaace.github.io/theme/style.css"&gt;</div>
+      <button class="code-copy-btn" data-copy='&lt;link rel="stylesheet" href="https://jaace.github.io/theme/style.css"&gt;' aria-label="Copy" title="Copy"><svg class="icon-copy" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2H3.5A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5"/></svg><svg class="icon-check" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="2.5 8.5 6 12 13.5 4.5"/></svg></button>
+    </div>
+
+    <span class="code-label">Before &lt;/body&gt;</span>
+    <div class="code-wrap">
+      <div class="code-block">&lt;script src="https://jaace.github.io/theme/theme.js"&gt;&lt;/script&gt;</div>
+      <button class="code-copy-btn" data-copy='&lt;script src="https://jaace.github.io/theme/theme.js"&gt;&lt;/script&gt;' aria-label="Copy" title="Copy"><svg class="icon-copy" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2H3.5A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5"/></svg><svg class="icon-check" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="2.5 8.5 6 12 13.5 4.5"/></svg></button>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section>
+    <h2>What you get</h2>
+    <ol class="steps">
+      <li>Dark/light mode with system preference detection and localStorage persistence</li>
+      <li>Design tokens via CSS custom properties — override <code style="font-family:var(--font-mono);color:var(--accent)">--accent</code> to change the entire palette</li>
+      <li>Pre-styled components: nav, hero, sections, code blocks, steps, callouts, footer</li>
+      <li>Copy-to-clipboard buttons that just work</li>
+    </ol>
+  </section>
+
+  <!-- Components -->
+  <section>
+    <h2>Components</h2>
+
+    <p>Every component below is included in <code style="font-family:var(--font-mono);font-size:13px;color:var(--accent);background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:4px;padding:1px 6px;">style.css</code>. View source on this page to see the HTML patterns.</p>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Ordered list</h3>
+    <ol class="steps">
+      <li>First step with a short description</li>
+      <li>Second step with enough content to wrap onto a second line, showing how the number stays aligned at the top</li>
+      <li>Third step</li>
+    </ol>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Unordered list</h3>
+    <ul class="list">
+      <li>First item in an unordered list</li>
+      <li>Second item with enough content to wrap onto a second line, showing how the dash stays aligned at the top</li>
+      <li>Third item</li>
+    </ul>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Command callout</h3>
+    <div class="command-callout">
+      <span class="cmd">/example-command</span>
+      <p>Highlighted callout for CLI commands or important actions. Uses the accent color palette.</p>
+    </div>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Code block with copy</h3>
+    <div class="code-wrap">
+      <div class="code-block">npm install something-cool</div>
+      <button class="code-copy-btn" data-copy="npm install something-cool" aria-label="Copy" title="Copy"><svg class="icon-copy" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2H3.5A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5"/></svg><svg class="icon-check" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="2.5 8.5 6 12 13.5 4.5"/></svg></button>
+    </div>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Install CTA</h3>
+    <div class="install-cta">
+      <code><span class="prompt-sign">$</span> npm install jaace-theme</code>
+      <button class="copy-btn" aria-label="Copy" title="Copy">
+        <svg class="icon-copy" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="5" y="5" width="9" height="9" rx="1.5"/>
+          <path d="M11 5V3.5A1.5 1.5 0 009.5 2H3.5A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5"/>
+        </svg>
+        <svg class="icon-check" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+          <polyline points="2.5 8.5 6 12 13.5 4.5"/>
+        </svg>
+      </button>
+    </div>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Terminal animation</h3>
+    <div class="terminal-section" style="padding: 0 0 4px;">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="terminal-body" id="terminal-demo"></div>
+      </div>
+      <button class="terminal-replay" id="terminal-replay" aria-label="Replay demo" title="Replay demo">↻ replay</button>
+    </div>
+    <p style="font-size:13px;color:var(--text-dim);margin-top:12px;">Requires <code style="font-family:var(--font-mono);font-size:12px;color:var(--accent);background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:4px;padding:1px 6px;">terminal.js</code>. Call <code style="font-family:var(--font-mono);font-size:12px;color:var(--accent);background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:4px;padding:1px 6px;">TerminalDemo.run({ demo, replay, examples })</code> after the DOM is ready.</p>
+
+    <h3 style="font-size:16px;color:var(--text);margin:32px 0 12px;font-weight:600;">Data table with effort tags</h3>
+    <table class="model-table">
+      <thead>
+        <tr>
+          <th>Option</th>
+          <th>Level</th>
+          <th>When to use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="model-name">Fast</span></td>
+          <td>
+            <div class="effort-tags">
+              <button class="tag accent" data-effort-text="Simple tasks, quick lookups, boilerplate generation">light</button>
+              <button class="tag" data-effort-text="Focused tasks with a clear path — some reasoning needed">standard</button>
+            </div>
+          </td>
+          <td><span class="best-for-text">Simple tasks, quick lookups, boilerplate generation</span></td>
+        </tr>
+        <tr>
+          <td><span class="model-name">Deep</span></td>
+          <td>
+            <div class="effort-tags">
+              <button class="tag" data-effort-text="Established patterns — needs depth but the answer exists">low</button>
+              <button class="tag accent" data-effort-text="Complex reasoning, open-ended design, hard tradeoffs">high</button>
+            </div>
+          </td>
+          <td><span class="best-for-text">Complex reasoning, open-ended design, hard tradeoffs</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note">Click effort tags to update descriptions. Data lives in <code>data-effort-text</code> — wired automatically by <code>theme.js</code>.</p>
+  </section>
+
+  <!-- Starter template -->
+  <section>
+    <h2>Starter template</h2>
+    <p>Copy this to start a new GitHub Pages site with the theme:</p>
+    <div class="code-wrap">
+      <div class="code-block">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" data-theme="dark"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Project&lt;/title&gt;
+  &lt;link rel="stylesheet" href="https://jaace.github.io/theme/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;nav&gt;
+    &lt;span class="nav-brand"&gt;&lt;span&gt;~&lt;/span&gt;/my-project&lt;/span&gt;
+    &lt;div class="nav-right"&gt;
+      &lt;button class="theme-toggle" id="theme-toggle"
+              aria-label="Toggle theme"&gt;
+        &lt;!-- paste sun/moon SVGs from the theme repo --&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+
+  &lt;section class="hero"&gt;
+    &lt;p class="eyebrow"&gt;Category&lt;/p&gt;
+    &lt;h1&gt;Project Name&lt;/h1&gt;
+    &lt;p class="tagline"&gt;One-line description.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;Section&lt;/h2&gt;
+    &lt;p&gt;Content goes here.&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;footer&gt;
+    &lt;span class="footer-note"&gt;Built by @You&lt;/span&gt;
+  &lt;/footer&gt;
+
+  &lt;script src="https://jaace.github.io/theme/theme.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div>
+      <button class="code-copy-btn" data-copy='<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="https://jaace.github.io/theme/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-brand"><span>~</span>/my-project</span>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle"
+              aria-label="Toggle theme">
+        <!-- paste sun/moon SVGs from the theme repo -->
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Category</p>
+    <h1>Project Name</h1>
+    <p class="tagline">One-line description.</p>
+  </section>
+
+  <section>
+    <h2>Section</h2>
+    <p>Content goes here.</p>
+  </section>
+
+  <footer>
+    <span class="footer-note">Built by @You</span>
+  </footer>
+
+  <script src="https://jaace.github.io/theme/theme.js"></script>
+</body>
+</html>' aria-label="Copy" title="Copy"><svg class="icon-copy" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2H3.5A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5"/></svg><svg class="icon-check" width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><polyline points="2.5 8.5 6 12 13.5 4.5"/></svg></button>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-note">Built by <a href="https://github.com/Jaace">@Jaace</a></span>
+    <div class="footer-links">
+      <a href="https://jason-boyle.com" class="footer-site-link"><svg width="14" height="15" viewBox="0 0 710 782" xmlns="http://www.w3.org/2000/svg"><g transform="translate(17.306,0.792)"><g transform="translate(0.5,0.409)"><path d="M112.43,520L337.27,649.81V390.19L112.43,260.38V520Z" fill="#358AC4"/><path d="M337.27,649.81V779.62L0.01,584.91L112.43,520L337.27,649.81Z" fill="#FACF8D"/><path d="M112.43,519.8V258.8L0.01,195.48V584.8L112.43,519.8Z" fill="#D46661"/><path d="M112.43,260.38L337.27,390.19L562.11,260.38L337.27,130.57L112.43,260.38Z" fill="#3996D5"/><path d="M337.27,649.81L562.11,520V260.38L337.27,390.19V649.81Z" fill="#358AC4"/><path d="M337.27,649.81V779.62L674.52,584.91L562.11,520L337.27,649.81Z" fill="#E0B97E"/><path d="M562.11,520V260.38L674.52,195.48V584.91L562.11,520Z" fill="#2ABFA7"/><path d="M562.11,260.38L337.27,130.57V0.76L674.52,195.48L562.11,260.38Z" fill="#31CCB0"/><path d="M112.43,260.38L0.01,195.48L337.27,0.76V130.57L112.43,260.38Z" fill="#EF746D"/></g></g><path d="M-18.09,647.02L1.45,681.02H391.47L371.55,647.52H-18.09Z" fill="#353F52" transform="translate(186.69,664.02)rotate(30)translate(-186.69,-664.02)"/><path d="M-51.26,408.44H727.66L708.13,374.47H-31.77L-51.26,408.44Z" fill="#353F52" transform="translate(338.2,391.46)rotate(270)translate(-338.2,-391.46)"/><path d="M337.17,685.74L692.23,684.37L710.19,651.9H320.42L337.17,685.74Z" fill="#3D4860" transform="translate(515.3,668.82)rotate(150)translate(-515.3,-668.82)"/><path d="M358.01,492.43L726.76,490.32L708.67,456.82L338.26,458.23L358.01,492.43Z" fill="#3D4860" transform="translate(532.51,474.62)rotate(210)translate(-532.51,-474.62)"/><path d="M708.72,135.26L691.15,101.62H338.13L338.19,135.45L708.72,135.26Z" fill="#3D4860" transform="translate(523.43,118.53)rotate(210)translate(-523.43,-118.53)"/><path d="M665.1,323.62H726.21L707.58,289.14H364.82L345.69,323.24L665.1,323.62Z" fill="#3D4860" transform="translate(535.95,306.38)rotate(150)translate(-535.95,-306.38)"/><path d="M744.45,394.55L747.54,361.61H14.31L-4.62,394.55H744.45Z" fill="#3D4860" transform="translate(371.46,378.08)rotate(90)translate(-371.46,-378.08)"/></svg>jason-boyle.com</a>
+      <a href="https://github.com/Jaace/theme">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+  <script src="terminal.js"></script>
+  <script>
+    TerminalDemo.run({
+      demo: '#terminal-demo',
+      replay: '#terminal-replay',
+      examples: [
+        {
+          prompt: "what's the default port for postgres?",
+          verb: 'Recalling',
+          sec: 2,
+          result: '5432',
+          note: 'standard PostgreSQL port, configurable in postgresql.conf'
+        },
+        {
+          prompt: 'fix the n+1 query in the users controller',
+          verb: 'Tracing',
+          sec: 3,
+          result: 'add .includes(:posts) to the scope',
+          note: 'eager-loads associations, eliminates per-row queries'
+        },
+        {
+          prompt: 'design a rate limiter for the public API',
+          verb: 'Designing',
+          sec: 5,
+          result: 'token bucket + Redis INCR/EXPIRE',
+          note: 'atomic ops, ~3ms overhead, handles burst traffic gracefully'
+        }
+      ]
+    });
+  </script>
+
+</body>
+</html>
